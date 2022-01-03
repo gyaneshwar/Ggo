@@ -24,7 +24,7 @@ func QuickSort(arr []int32) {
 
 	// pile all the elements left to pivot
 	for i := range arr {
-		if arr[i] > arr[right] {
+		if arr[i] < arr[right] {
 			arr[left], arr[i] = arr[i], arr[left]
 			left++
 		}

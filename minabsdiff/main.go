@@ -17,6 +17,8 @@ func minimumAbsoluteDifference(arr []int32) int32 {
 	sorting.QuickSort(arr)
 	var min int32 = 0
 	for i := 0; i < len(arr)-1; i++ {
+
+		// assign first min value
 		if i == 0 {
 			min = arr[i] - arr[i+1]
 			if min < 0 {
