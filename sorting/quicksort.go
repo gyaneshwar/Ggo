@@ -41,3 +41,10 @@ func QuickSort(arr []int32) {
 
 	//return sorted array
 }
+
+func QuickSortDesc(arr []int32) {
+	QuickSort(arr)
+	for i, l := 0, len(arr)-1; i < len(arr)/2; i, l = i+1, l-1 {
+		arr[i], arr[l] = arr[l], arr[i]
+	}
+}
